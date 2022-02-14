@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <!-- TailwindCss link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <main id="container" class="h-screen bg-slate-800 flex justify-center items-center">
+    <section id="calculator" class=" w-1/4 text-orange-600 ">
+      <div id="head" class="mb-6">
+        <label for="result" class="flex justify-end text-orange-600 font-extrabold">Result</label>
+        <input id="result" readonly type="text"  class="block outline-none text-center p-2 bg-slate-600 w-full h-16 border-solid border-2 border-orange-600 text-orange-600 font-extrabold text-2xl">
+        <input id="input" type="text" readonly class="block mt-2 outline-none text-right p-2 bg-slate-600 w-full h-16 border-solid border-2 border-orange-600 text-orange-600 font-extrabold text-xl" >
+      </div>
+      <div id="keypad" class="text-orange-600 ">
+        <div class="button-row mt-2 grid grid-cols-2 gap-4 ">
+          <button onClick='getData(event)' class="bg-slate-300  p-3 font-extrabold">AC</button>
+          <button onClick='getData(event)' class="bg-slate-300  p-3 font-extrabold">DEL</button>
+        </div>
+        <div class="button-row mt-2 grid grid-cols-4 gap-4">
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">7</button>
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">8</button>
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">9</button>
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">÷</button>
+        </div>
+        <div class="button-row mt-2 grid grid-cols-4 gap-4">
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">4</button>
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">5</button>
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">6</button>
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">x</button>
+        </div>
+        <div class="button-row mt-2 grid grid-cols-4 gap-4">
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">1</button>
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">2</button>
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">3</button>
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">+</button>
+        </div>
+        <div class="button-row mt-2 grid grid-cols-4 gap-4">
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">0</button>
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold">-</button>
+          <button onClick='getData(event)' class="bg-slate-300 p-3 font-extrabold col-span-2">=</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- js link -->
+  <script src="script.js"></script>
+</body>
+</html>
